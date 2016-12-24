@@ -3,8 +3,8 @@
 
 最新更新：修复了开启Label后CPU占用较多的问题
 
-[操作](http://i64.tinypic.com/biv790.gif)
+![操作](http://i64.tinypic.com/biv790.gif)
 
-[介绍](http://i66.tinypic.com/25z49wi.jpg)
+![介绍](http://i66.tinypic.com/25z49wi.jpg)
 
-[配置](http://i68.tinypic.com/rlceoz.jpg)
+![配置](http://i68.tinypic.com/rlceoz.jpg)
