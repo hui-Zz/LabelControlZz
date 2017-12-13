@@ -1,8 +1,8 @@
 ;LabelControl.ahk
 ; Overlays controls with a Number for direct access via Ctrl-Number
 ;Skrommel @2006
-; Ê¹ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å¿ªï¿½ï¿½+ï¿½ï¿½Ä¸ï¿½ï¿½Ê½È¡ï¿½ï¿½Ô­Ctrl+ï¿½ï¿½ï¿½ï¿½
-; ï¿½ï¿½Ïµï¿½ï¿½hui0.0713@gmail.com ï¿½ï¿½ï¿½ï¿½Èºï¿½ï¿½271105729
+; Ê¹ÓÃ×Ô¶¨Òå¿ª¹Ø+×ÖÄ¸ĞÎÊ½È¡´úÔ­Ctrl+Êı×Ö
+; ÁªÏµ£ºhui0.0713@gmail.com ÌÖÂÛÈº£º271105729
 ;by Zz @2016.06.28
 
 #SingleInstance,Force
@@ -1243,10 +1243,10 @@ Menu,Tray,Add,%applicationname%,SWAP
 Menu,Tray,Add,
 Menu,Tray,Add,&Enabled,SWAP
 Menu,Tray,Add,
-Menu,Tray,Add,&Settings(S)è®¾ç½®...,SETTINGS
-Menu,Tray,Add,&About(A)å…³äº...,ABOUT
-Menu,Tray,Add,&Reload(R)é‡å¼€,Reload
-Menu,Tray,Add,E&xit(X)é€€å‡º,EXIT
+Menu,Tray,Add,&Settings(S)ÉèÖÃ...,SETTINGS
+Menu,Tray,Add,&About(A)¹ØÓÚ...,ABOUT
+Menu,Tray,Add,&Reload(R)ÖØ¿ª,Reload
+Menu,Tray,Add,E&xit(X)ÍË³ö,EXIT
 Menu,Tray,Check,&Enabled
 Menu,Tray,Default,%applicationname%
 Menu,Tray,Tip,%applicationname%
@@ -1264,35 +1264,35 @@ Gui,Destroy
 Gui,Margin,30,40
 Gui,Add,Tab,x10 y10 w520 h370,Settings|Focus|Click|Tab|Toolbar|Header|Search|Listview|Treeview|Ignore
 Gui,Tab,Settings,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h55,ï¿½Ô¶ï¿½ï¿½å¿ªï¿½ï¿½ï¿½È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½AutoHotkeyï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½ï¿½ï¿½:|``|F1|LWin|CapsLock|..ï¿½ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h55,×Ô¶¨Òå¿ª¹ØÈÈ¼ü¡¾²ÎÕÕAutoHotkey°´¼üÁĞ±íÈç:|``|F1|LWin|CapsLock|..¡¿
 Gui,Add,Edit,xm yp+20 w100 vvzzkey,%zzkey%
 
-Gui,Add,GroupBox,xm-10 y+20 w500 h55,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Labelï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ë«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Ê¼ï¿½ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h55,µ¥¼üÌáÊ¾¡¾LabelÉÙÇé¿öÏÂ£¬Ó¦´óÓÚË«¼ü×éºÏÊıÁ¿£¬½¨ÒéË³Ğò´Ó×óÊÖ±ßÊúÅÅ×ÖÄ¸¿ªÊ¼¡¿
 Gui,Add,Edit,xm yp+20 w450 h30 vvaz1,%az1%
 
-Gui,Add,GroupBox,xm-10 y+20 w500 h55,Ë«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Labelï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æµ¥ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ»ï¿½ÎªË«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h55,Ë«¼ü×éºÏÌáÊ¾¡¾Label¶àÇé¿öÏÂ£¬ÌáÊ¾Á¿³¬¹ıÉÏÃæµ¥¼üÌáÊ¾ÊıÁ¿¼´ÇĞ»»ÎªË«¼ü×éºÏÌáÊ¾¡¿
 Gui,Add,Edit,xm yp+20 w450 vvaz2,%az2%
 
-Gui,Add,GroupBox,xm-10 y+20 w500 h55,ï¿½Ô¶ï¿½ï¿½Ø±ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Labelï¿½ï¿½ï¿½Öºó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Ô¶ï¿½ï¿½Ø±Õ£ï¿½0Îªï¿½ï¿½ï¿½Ã²ï¿½ï¿½Ø±Õ¡ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h55,×Ô¶¯¹Ø±ÕÑÓ³ÙÃëÊı¡¾Label³öÏÖºó£¬²»²Ù×÷¶¨Ê±×Ô¶¯¹Ø±Õ£¬0ÎªÓÀ¾Ã²»¹Ø±Õ¡¿
 Gui,Add,Edit,xm yp+20 w100 vvzztime,%zztime%
 
-Gui,Add,GroupBox,xm-10 y+20 w500 h55,ï¿½ï¿½ê¶¯ï¿½ï¿½[&Mouse &action]
-Gui,Add,CheckBox,xm yp+20 Checked%movemouse% vvmovemouse,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½[Move the mouse to the control]
+Gui,Add,GroupBox,xm-10 y+20 w500 h55,Êó±ê¶¯×÷[&Mouse &action]
+Gui,Add,CheckBox,xm yp+20 Checked%movemouse% vvmovemouse,½«Êó±êÒÆ¶¯µ½¿Ø¼ş[Move the mouse to the control]
 
 Gui,Tab,Focus,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &Focus ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿Ø¼ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &Focus ½¹µã×÷ÓÃ¿Ø¼ş
 Gui,Add,Edit,xm yp+20 w480 h290 vvfocuscontrols,%focuscontrols%
 
 Gui,Tab,Click,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &Click ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿Ø¼ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &Click µã»÷×÷ÓÃ¿Ø¼ş
 Gui,Add,Edit,xm yp+20 w480 h290 vvclickcontrols,%clickcontrols%
 
 Gui,Tab,Tab,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Tab controls ï¿½ï¿½Ç©ï¿½Ø¼ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Tab controls ±êÇ©¿Ø¼ş
 Gui,Add,Edit,xm yp+20 w480 h290 vvtabcontrols,%tabcontrols%
 
 Gui,Tab,Toolbar,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,Tool&bar controls ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,Tool&bar controls ¹¤¾ßÀ¸¿Ø¼ş
 Gui,Add,Edit,xm yp+20 w480 h290 vvtoolbarcontrols,%toolbarcontrols%
 
 Gui,Tab,Header,,Exact
@@ -1300,19 +1300,19 @@ Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Header controls
 Gui,Add,Edit,xm yp+20 w480 h290 vvheadercontrols,%headercontrols%
 
 Gui,Tab,Search,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Search controls ï¿½ï¿½ï¿½Ò¿Ø¼ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Search controls ²éÕÒ¿Ø¼ş
 Gui,Add,Edit,xm yp+20 w480 h290 vvsearchcontrols,%searchcontrols%
 
 Gui,Tab,Listview,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Listviews ï¿½Ğ±ï¿½Ø¼ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Listviews ÁĞ±í¿Ø¼ş
 Gui,Add,Edit,xm yp+20 w480 h290 vvlistviews,%listviews%
 
 Gui,Tab,Treeview,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Treeviews ï¿½ï¿½ï¿½Í¿Ø¼ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Treeviews Ê÷ĞÍ¿Ø¼ş
 Gui,Add,Edit,xm yp+20 w480 h290 vvtreeviews,%treeviews%
 
 Gui,Tab,Ignore,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &ignore ï¿½ï¿½ï¿½Ô¿Ø¼ï¿½
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &ignore ºöÂÔ¿Ø¼ş
 Gui,Add,Edit,xm yp+20 w480 h290 vvignorecontrols,%ignorecontrols%
 
 Gui,Tab
@@ -1353,19 +1353,19 @@ Gui,99:Add,Picture,xm Icon1,%A_ScriptName%
 Gui,99:Font,Bold
 Gui,99:Add,Text,x+10 yp+10,%applicationname% vZz 2016.06.28
 Gui,99:Font
-Gui,99:Add,Text,y+10,+ ï¿½Ô¶ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(Ä¬ï¿½ï¿½Îª``ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì²ï¿½ï¿½ï¿½
-Gui,99:Add,Text,y+10,+ ï¿½Ô¶ï¿½ï¿½ï¿½Ë«ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½È¡ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÄ²ï¿½ï¿½ã£¬ï¿½Å»ï¿½CPUÕ¼ï¿½ï¿½
-Gui,99:Add,Text,y+10,+ ï¿½ï¿½Ê¾ï¿½Ö·ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Ô¶ï¿½ï¿½Ø±ï¿½
-Gui,99:Add,Text,y+10,+ ï¿½ï¿½Ïµï¿½ï¿½hui0.0713@gmail.com ï¿½ï¿½ï¿½ï¿½Èºï¿½ï¿½271105729
+Gui,99:Add,Text,y+10,+ ×Ô¶¨ÒåÒ»¼ü¿ª¹Ø(Ä¬ÈÏÎª``ÖØÒô·û)£¬¿ÉÁ¬¹á¼üÅÌ²Ù×÷
+Gui,99:Add,Text,y+10,+ ×Ô¶¯µ¥Ë«×ÖÄ¸¼ü×éºÏÌáÊ¾£¬È¡´úÔ­°æÊı×ÖµÄ²»±ã£¬ÓÅ»¯CPUÕ¼ÓÃ
+Gui,99:Add,Text,y+10,+ ÌáÊ¾×Ö·û×ÖÄ¸¿É×Ô¶¨ÒåÉèÖÃ£¬²»²Ù×÷¶¨Ê±×Ô¶¯¹Ø±Õ
+Gui,99:Add,Text,y+10,+ ÁªÏµ£ºhui0.0713@gmail.com ÌÖÂÛÈº£º271105729
 
 Gui,99:Add,Picture,xm Icon8,%A_ScriptName%
 Gui,99:Font,Bold
-Gui,99:Add,Text,x+10 yp+10,%applicationname% v1.6 (Ô­ï¿½ï¿½)
+Gui,99:Add,Text,x+10 yp+10,%applicationname% v1.6 (Ô­°æ)
 Gui,99:Font
-Gui,99:Add,Text,y+10,- ï¿½ï¿½×¡Ctrlï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½É¿ï¿½Ctrlï¿½ï¿½
-Gui,99:Add,Text,y+10,- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì²Ëµï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
-Gui,99:Add,Text,y+10,* Òªï¿½ï¿½Ó¸ï¿½ï¿½ï¿½Ä¿Ø¼ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½AutoHotkeyï¿½ï¿½ï¿½Ğµï¿½Window Spyï¿½ï¿½ï¿½ï¿½
-Gui,99:Add,Text,y+5,ï¿½Òµï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ClassNNï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ä±ï¿½Ç©ï¿½ï¿½
+Gui,99:Add,Text,y+10,- °´×¡Ctrl¼ü£¬ÊäÈëÊı×Ö£¬ËÉ¿ªCtrl¡£
+Gui,99:Add,Text,y+10,- ¸ü¸ÄÉèÖÃÔÚÍĞÅÌ²Ëµ¥ÖĞµÄÉèÖÃ¡£
+Gui,99:Add,Text,y+10,* ÒªÌí¼Ó¸ü¶àµÄ¿Ø¼ş£¬Ê¹ÓÃAutoHotkeyµ±ÖĞµÄWindow Spy¹¤¾ß
+Gui,99:Add,Text,y+5,ÕÒµ½¿Ø¼şÀàClassNN£¬²¢°ÑËüÌí¼Óµ½ÉèÖÃÀïÊÊµ±µÄ±êÇ©¡£
 
 Gui,99:Add,Picture,xm y+20 Icon5,%A_ScriptName%
 Gui,99:Font,Bold
