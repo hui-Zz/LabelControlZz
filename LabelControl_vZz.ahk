@@ -1,8 +1,8 @@
 ;LabelControl.ahk
 ; Overlays controls with a Number for direct access via Ctrl-Number
 ;Skrommel @2006
-; 使用自定义开关+字母形式取代原Ctrl+数字
-; 联系：hui0.0713@gmail.com 讨论群：271105729
+; ʹ���Զ��忪��+��ĸ��ʽȡ��ԭCtrl+����
+; ��ϵ��hui0.0713@gmail.com ����Ⱥ��271105729
 ;by Zz @2016.06.28
 
 #SingleInstance,Force
@@ -1264,35 +1264,35 @@ Gui,Destroy
 Gui,Margin,30,40
 Gui,Add,Tab,x10 y10 w520 h370,Settings|Focus|Click|Tab|Toolbar|Header|Search|Listview|Treeview|Ignore
 Gui,Tab,Settings,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h55,自定义开关热键【参照AutoHotkey按键列表如:|``|F1|LWin|CapsLock|..】
+Gui,Add,GroupBox,xm-10 y+20 w500 h55,�Զ��忪���ȼ�������AutoHotkey�����б���:|``|F1|LWin|CapsLock|..��
 Gui,Add,Edit,xm yp+20 w100 vvzzkey,%zzkey%
 
-Gui,Add,GroupBox,xm-10 y+20 w500 h55,单键提示【Label少情况下，应大于双键组合数量，建议顺序从左手边竖排字母开始】
+Gui,Add,GroupBox,xm-10 y+20 w500 h55,������ʾ��Label������£�Ӧ����˫���������������˳������ֱ�������ĸ��ʼ��
 Gui,Add,Edit,xm yp+20 w450 h30 vvaz1,%az1%
 
-Gui,Add,GroupBox,xm-10 y+20 w500 h55,双键组合提示【Label多情况下，提示量超过上面单键提示数量即切换为双键组合提示】
+Gui,Add,GroupBox,xm-10 y+20 w500 h55,˫�������ʾ��Label������£���ʾ���������浥����ʾ�������л�Ϊ˫�������ʾ��
 Gui,Add,Edit,xm yp+20 w450 vvaz2,%az2%
 
-Gui,Add,GroupBox,xm-10 y+20 w500 h55,自动关闭延迟秒数【Label出现后，不操作定时自动关闭，0为永久不关闭】
+Gui,Add,GroupBox,xm-10 y+20 w500 h55,�Զ��ر��ӳ�������Label���ֺ󣬲�������ʱ�Զ��رգ�0Ϊ���ò��رա�
 Gui,Add,Edit,xm yp+20 w100 vvzztime,%zztime%
 
-Gui,Add,GroupBox,xm-10 y+20 w500 h55,鼠标动作[&Mouse &action]
-Gui,Add,CheckBox,xm yp+20 Checked%movemouse% vvmovemouse,将鼠标移动到控件[Move the mouse to the control]
+Gui,Add,GroupBox,xm-10 y+20 w500 h55,��궯��[&Mouse &action]
+Gui,Add,CheckBox,xm yp+20 Checked%movemouse% vvmovemouse,������ƶ����ؼ�[Move the mouse to the control]
 
 Gui,Tab,Focus,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &Focus 焦点作用控件
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &Focus �������ÿؼ�
 Gui,Add,Edit,xm yp+20 w480 h290 vvfocuscontrols,%focuscontrols%
 
 Gui,Tab,Click,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &Click 点击作用控件
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &Click ������ÿؼ�
 Gui,Add,Edit,xm yp+20 w480 h290 vvclickcontrols,%clickcontrols%
 
 Gui,Tab,Tab,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Tab controls 标签控件
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Tab controls ��ǩ�ؼ�
 Gui,Add,Edit,xm yp+20 w480 h290 vvtabcontrols,%tabcontrols%
 
 Gui,Tab,Toolbar,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,Tool&bar controls 工具栏控件
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,Tool&bar controls �������ؼ�
 Gui,Add,Edit,xm yp+20 w480 h290 vvtoolbarcontrols,%toolbarcontrols%
 
 Gui,Tab,Header,,Exact
@@ -1300,19 +1300,19 @@ Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Header controls
 Gui,Add,Edit,xm yp+20 w480 h290 vvheadercontrols,%headercontrols%
 
 Gui,Tab,Search,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Search controls 查找控件
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Search controls ���ҿؼ�
 Gui,Add,Edit,xm yp+20 w480 h290 vvsearchcontrols,%searchcontrols%
 
 Gui,Tab,Listview,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Listviews 列表控件
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Listviews �б�ؼ�
 Gui,Add,Edit,xm yp+20 w480 h290 vvlistviews,%listviews%
 
 Gui,Tab,Treeview,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Treeviews 树型控件
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,&Treeviews ���Ϳؼ�
 Gui,Add,Edit,xm yp+20 w480 h290 vvtreeviews,%treeviews%
 
 Gui,Tab,Ignore,,Exact
-Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &ignore 忽略控件
+Gui,Add,GroupBox,xm-10 y+20 w500 h320,Controls to &ignore ���Կؼ�
 Gui,Add,Edit,xm yp+20 w480 h290 vvignorecontrols,%ignorecontrols%
 
 Gui,Tab
@@ -1353,19 +1353,19 @@ Gui,99:Add,Picture,xm Icon1,%A_ScriptName%
 Gui,99:Font,Bold
 Gui,99:Add,Text,x+10 yp+10,%applicationname% vZz 2016.06.28
 Gui,99:Font
-Gui,99:Add,Text,y+10,+ 自定义一键开关(默认为``重音符)，可连贯键盘操作
-Gui,99:Add,Text,y+10,+ 自动单双字母键组合提示，取代原版数字的不便，优化CPU占用
-Gui,99:Add,Text,y+10,+ 提示字符字母可自定义设置，不操作定时自动关闭
-Gui,99:Add,Text,y+10,+ 联系：hui0.0713@gmail.com 讨论群：271105729
+Gui,99:Add,Text,y+10,+ �Զ���һ������(Ĭ��Ϊ``�����)����������̲���
+Gui,99:Add,Text,y+10,+ �Զ���˫��ĸ�������ʾ��ȡ��ԭ�����ֵĲ��㣬�Ż�CPUռ��
+Gui,99:Add,Text,y+10,+ ��ʾ�ַ���ĸ���Զ������ã���������ʱ�Զ��ر�
+Gui,99:Add,Text,y+10,+ ��ϵ��hui0.0713@gmail.com ����Ⱥ��271105729
 
 Gui,99:Add,Picture,xm Icon8,%A_ScriptName%
 Gui,99:Font,Bold
-Gui,99:Add,Text,x+10 yp+10,%applicationname% v1.6 (原版)
+Gui,99:Add,Text,x+10 yp+10,%applicationname% v1.6 (ԭ��)
 Gui,99:Font
-Gui,99:Add,Text,y+10,- 按住Ctrl键，输入数字，松开Ctrl。
-Gui,99:Add,Text,y+10,- 更改设置在托盘菜单中的设置。
-Gui,99:Add,Text,y+10,* 要添加更多的控件，使用AutoHotkey当中的Window Spy工具
-Gui,99:Add,Text,y+5,找到控件类ClassNN，并把它添加到设置里适当的标签。
+Gui,99:Add,Text,y+10,- ��סCtrl�����������֣��ɿ�Ctrl��
+Gui,99:Add,Text,y+10,- �������������̲˵��е����á�
+Gui,99:Add,Text,y+10,* Ҫ��Ӹ���Ŀؼ���ʹ��AutoHotkey���е�Window Spy����
+Gui,99:Add,Text,y+5,�ҵ��ؼ���ClassNN����������ӵ��������ʵ��ı�ǩ��
 
 Gui,99:Add,Picture,xm y+20 Icon5,%A_ScriptName%
 Gui,99:Font,Bold
